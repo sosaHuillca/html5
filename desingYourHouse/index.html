@@ -19,27 +19,46 @@ body{
 </style>
 </head>
 <body>
+<<<<<<< HEAD
   <!--
   <header id="contenedor-banner">
     <a href='#'>interior</a>
+=======
+  <header class="l-header">
+    <a href='#' class="logo">interior</a>
+>>>>>>> 2dad35c (se inicio por escritorio)
 
     <nav>
-      <a href='#'>HOME</a>
-      <a href='#'>BEDROOM</a>
-      <a href='#'>DINNIG</a>
-      <a href='#'>KITCHEN</a>
-      <a href='#'>BACKYARD</a>
+      <button class="boton-menu">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+      </button>
+      <div>
+        <a href='#'>HOME</a>
+        <a href='#'>BEDROOM</a>
+        <a href='#'>DINNIG</a>
+        <a href='#'>KITCHEN</a>
+        <a href='#'>BACKYARD</a>
+      </div>
     </nav>
 
     <h1>DESIGN YOUR HOUSE</h1>
 
     <p> Subscribe easy Tutorials YouTube Channel to watch more videos press the bell icon to get latest updates.</p>
 
-    <a class="boton" href='#'>WATCH MORE</a>
-    <a class="boton" href='#'>SUSBCRIBE</a>
+    <a class="boton" href='#watch-more'>WATCH MORE</a>
+    <a class="boton" href='#susbcribe'>SUSBCRIBE</a>
   </header>
+<<<<<<< HEAD
   -->
     <btn-burguer></btn-burguer>
   <script type=module src="boton-burguer.js"></script>
+=======
+  <script>
+    document.querySelector("button").addEventListener("click",()=>{
+      document.querySelector("nav>div").classList.toggle("show-nav")
+    })
+  </script>
+
+>>>>>>> 2dad35c (se inicio por escritorio)
 </body>
 </html>
