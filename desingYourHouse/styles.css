@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-*{
-  box-sizing:border-box;
-}
-
-body{
-  font-family: 'Poppins', sans-serif;
-=======
 /*====================BASIC============*/
 *{ box-sizing:border-box; }
 
@@ -14,44 +6,28 @@ body{ font-family: 'Poppins', sans-serif; }
 a {
   color:inherit;
   text-decoration:none;
->>>>>>> 2dad35c (se inicio por escritorio)
 }
 
-#contenedor-banner{
-  position:relative;
-
+.bg-image-header{
   background-image:url("https://cdn.pixabay.com/photo/2019/07/15/08/32/australia-4338882_960_720.jpg");
   background-repeat:no-repeat;
   background-size:cover;
+  z-index:1;
+}
+
+header{
+  position:relative;
 
   height:calc(100vh - 16px);
   padding: 1rem;
   border-radius:1rem;
 
-<<<<<<< HEAD
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 3rem 1fr max-content 10rem min-content 1fr;
-  grid-template-areas: "logo navegacion"
-  ". ."
-  "titulo titulo"
-  "contenido contenido"
-  "boton1 boton2"
-  ". .";
-  background-image:url("https://cdn.pixabay.com/photo/2019/07/15/08/32/australia-4338882_960_720.jpg");
-
-  color:#fff;
-  background-size:100%;
-  padding: 1rem;
-  border-radius:1rem;
   overflow:hidden;
-}
+  color:white;
 
-#contenedor-banner::before{
-=======
-  color:#fff;
-  overflow:hidden;
   z-index:0;
 }
+
 
 .l-header{
   display:grid;
@@ -65,8 +41,7 @@ a {
   ". .";
 }
 
-header::before{
->>>>>>> 2dad35c (se inicio por escritorio)
+.bg-dark::before{
   content:"";
   display:block;
   position:absolute;
@@ -78,70 +53,41 @@ header::before{
   z-index:1;
 }
 
-<<<<<<< HEAD
 
-a {
-  color:inherit;
-  text-decoration:none;
-  z-index:11;
-}
-
-
-#contenedor-banner > a:nth-child(1){
-=======
 .logo{
->>>>>>> 2dad35c (se inicio por escritorio)
   grid-area:logo;
   align-self:center;
   font-size:2rem;
   z-index:2;
 }
 
-#contenedor-banner nav{
+nav{
   grid-area:navegacion;
   justify-self: end;
   align-self:center;
-  z-index:11;
+  z-index:3;
 }
 
-<<<<<<< HEAD
-#contenedor-banner nav a {
-  margin-right:1rem;
-}
-
-#contenedor-banner > h1{
-  grid-area:titulo;
-  justify-self: center;
-  font-size: 4.5rem;
-  margin:1rem;
-  z-index:11;
-=======
-nav a {
+.links>a{
   margin-right:1rem;
 }
 
 h1{
   grid-area:titulo;
   justify-self: center;
-  /*font-size: 4.5rem;*/
   font-size: calc(1.8rem + 3vw);
   margin:0rem;
   z-index:2;
->>>>>>> 2dad35c (se inicio por escritorio)
 }
 
-#contenedor-banner p{
+p{
   grid-area:contenido;
   justify-self: center;
   max-width: 30rem;
-<<<<<<< HEAD
-  z-index:11;
-=======
   z-index:2;
->>>>>>> 2dad35c (se inicio por escritorio)
 }
 
-#contenedor-banner > a:nth-child(5){
+header > a:nth-child(5){
   grid-area:boton1;
   justify-self: end;
   margin-right:.5rem;
@@ -149,7 +95,7 @@ h1{
   background: seagreen;
 }
 
-#contenedor-banner > a:nth-child(6){
+header > a:nth-child(6){
   grid-area:boton2;
   justify-self: start;
   z-index:11;
@@ -165,20 +111,13 @@ h1{
 
 .boton{
   padding: .6rem;
-<<<<<<< HEAD
-  border: 1px solid;
-=======
   border: 1px solid seagreen;
->>>>>>> 2dad35c (se inicio por escritorio)
   border-radius: 1rem;
   width:9rem;
   text-align:center;
   font-weight:500;
-<<<<<<< HEAD
-=======
   transition: background,border-color,transform .5s ease-in;
   z-index:2;
->>>>>>> 2dad35c (se inicio por escritorio)
 }
 
 .boton:hover{
